@@ -1,0 +1,27 @@
+[user]
+	name = Kanad Gupta
+	email = git@kanad.dev
+[credential]
+	helper = osxkeychain
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[core]
+	autocrlf = input
+	editor = code --wait --new-window
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[alias]
+	co = checkout
+[diff]
+	tool = default-difftool
+[difftool "default-difftool"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
