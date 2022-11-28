@@ -1,12 +1,6 @@
 [user]
 	name = Kanad Gupta
 	email = git@kanad.dev
-[credential]
-	helper = osxkeychain
-[filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
 [core]
 	autocrlf = input
 	editor = code --wait --new-window
