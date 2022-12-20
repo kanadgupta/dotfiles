@@ -108,3 +108,7 @@ alias gho="gh repo view -w"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# Load 1Password shell plugins
+# https://developer.1password.com/docs/cli/shell-plugins/readme#step-2-source-the-pluginssh-file
+source $HOME/.config/op/plugins.sh
