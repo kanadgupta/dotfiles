@@ -1,5 +1,6 @@
 # Remove git-tracked copies and symlink them with existing copies
 # (so changes can be reverted piecemeal)
+set -e
 
 # zshrc
 echo "Regenerating/linking .zshrc"
