@@ -1,0 +1,43 @@
+{
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  // "editor.fontLigatures": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.cursorBlinking": "phase",
+  "editor.suggest.shareSuggestSelections": true,
+  // "editor.snippetSuggestions": "top",
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "strings": "on",
+    "other": "on"
+  },
+  "terminal.external.osxExec": "iTerm.app",
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.tabCompletion": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "debug.javascript.autoAttachFilter": "disabled",
+  "workbench.iconTheme": "material-icon-theme",
+  "git.autofetch": true,
+  "eslint.onIgnoredFiles": "warn",
+  "[njk]": {
+    "editor.defaultFormatter": "eseom.nunjucks-template"
+  },
+  "markdown-preview-github-styles.colorTheme": "light",
+  "github-actions.org-features": true,
+  "terminal.integrated.shellIntegration.enabled": true,
+  "editor.stickyScroll.enabled": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.printWidth": 120,
+  // "prettier.singleQuote": true, // this is what it is in ReadMe, but idk how I feel about it
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "redhat.telemetry.enabled": false,
+  "workbench.editor.labelFormat": "short",
+  "settingsSync.ignoredExtensions": ["golang.go"],
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "go.toolsManagement.autoUpdate": true
+}

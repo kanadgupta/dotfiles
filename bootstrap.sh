@@ -12,4 +12,9 @@ echo "Regenerating/linking .gitconfig"
 rm ./.gitconfig
 ln ~/.gitconfig ./.gitconfig
 
+# VSCode global settings.json
+echo "Regenerating/linking VSCode settings"
+rm ./vscode/settings.json
+ln ~/Library/"Application Support"/Code/User/settings.json ./vscode/settings.json
+
 echo "Done!"
