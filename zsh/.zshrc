@@ -112,3 +112,13 @@ fi
 # Load 1Password shell plugins
 # https://developer.1password.com/docs/cli/shell-plugins/readme#step-2-source-the-pluginssh-file
 source $HOME/.config/op/plugins.sh
+
+# Shorthand for `rdme login` but with everything prefilled via 1Password CLI
+function rdmelog {
+  op signin && rdme login --email $(op item get 'ReadMe' --field username) --password $(op item get 'ReadMe' --field password) --otp $(op item get 'ReadMe' --otp)
+}
+
+# Shorthand for `npm publish` with OTP prefilled via 1Password CLI
+function npmpub {
+  npm publish --otp $(op signin && op item get npmjs --otp)
+}
