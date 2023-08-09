@@ -29,9 +29,6 @@
   "github-actions.org-features": true,
   "terminal.integrated.shellIntegration.enabled": true,
   "editor.stickyScroll.enabled": true,
-  "prettier.arrowParens": "avoid",
-  "prettier.printWidth": 120,
-  // "prettier.singleQuote": true, // this is what it is in ReadMe, but idk how I feel about it
   "screencastMode.onlyKeyboardShortcuts": true,
   "redhat.telemetry.enabled": false,
   "workbench.editor.labelFormat": "short",
