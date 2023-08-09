@@ -12,6 +12,9 @@
     "strings": "on",
     "other": "on"
   },
+  "editor.codeActionsOnSave": {
+    "source.removeUnusedImports": true
+  },
   "terminal.external.osxExec": "iTerm.app",
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
@@ -36,5 +39,16 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
-  "go.toolsManagement.autoUpdate": true
+  "go.toolsManagement.autoUpdate": true,
+  "editor.renderWhitespace": "all",
+  "[toml]": {
+    "editor.defaultFormatter": "be5invis.toml"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "timonwong.shellcheck"
+  },
+  "githubPullRequests.pullBranch": "never"
+  // Apparently this toggling this setting fixes the VSCode package.json schema error I see from time to time?
+  // See https://stackoverflow.com/a/75596916
+  // "workbench.settings.openDefaultSettings": true
 }
