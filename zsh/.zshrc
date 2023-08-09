@@ -71,7 +71,14 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  ## These plugins enable autocomplete for their respective CLIs.
+  ## For performance reasons, I disabled the ones below since their completions are
+  ## already loaded into my oh-my-zsh cache (`open $ZSH/cache/completions`).
+  # gh
+  ## Deno is a custom omz plugin, see: https://deno.land/manual@v1.36.0/getting_started/setup_your_environment#zsh-example-with-ohmyzsh-and-antigen
+  # deno
+)
 
 source $ZSH/oh-my-zsh.sh
 
