@@ -1,4 +1,4 @@
-# code --list-extensions > extensions.txt
+# code --list-extensions > .vscode/extensions.txt
 
 42Crunch.vscode-openapi
 astro-build.astro-vscode
