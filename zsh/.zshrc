@@ -127,3 +127,6 @@ function rdmelog {
 function npmpub {
   npm publish --otp $(op signin && op item get npmjs --otp)
 }
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/kanadg/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
