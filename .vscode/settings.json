@@ -25,9 +25,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "git.autofetch": true,
   "eslint.onIgnoredFiles": "warn",
-  "[njk]": {
-    "editor.defaultFormatter": "eseom.nunjucks-template"
-  },
   "markdown-preview-github-styles.colorTheme": "light",
   "github-actions.org-features": true,
   "terminal.integrated.shellIntegration.enabled": true,
