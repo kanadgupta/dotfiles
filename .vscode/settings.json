@@ -26,7 +26,6 @@
   "git.autofetch": true,
   "eslint.onIgnoredFiles": "warn",
   "markdown-preview-github-styles.colorTheme": "light",
-  "github-actions.org-features": true,
   "terminal.integrated.shellIntegration.enabled": true,
   "editor.stickyScroll.enabled": true,
   "screencastMode.onlyKeyboardShortcuts": true,
@@ -44,7 +43,6 @@
   "[shellscript]": {
     "editor.defaultFormatter": "timonwong.shellcheck"
   },
-  "githubPullRequests.pullBranch": "never"
   // Apparently this toggling this setting fixes the VSCode package.json schema error I see from time to time?
   // See https://stackoverflow.com/a/75596916
   // "workbench.settings.openDefaultSettings": true
