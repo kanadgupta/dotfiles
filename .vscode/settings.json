@@ -28,7 +28,13 @@
   "markdown-preview-github-styles.colorTheme": "light",
   "terminal.integrated.shellIntegration.enabled": true,
   "editor.stickyScroll.enabled": true,
-  "screencastMode.onlyKeyboardShortcuts": true,
+  "screencastMode.keyboardOptions": {
+    "showKeys": false,
+    "showKeybindings": true,
+    "showCommands": true,
+    "showCommandGroups": true,
+    "showSingleEditorCursorMoves": true
+  },
   "redhat.telemetry.enabled": false,
   "workbench.editor.labelFormat": "short",
   "settingsSync.ignoredExtensions": ["golang.go"],
