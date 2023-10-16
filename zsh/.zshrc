@@ -141,3 +141,12 @@ function npmpub {
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/kanadg/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
+# brew autocomplete
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
