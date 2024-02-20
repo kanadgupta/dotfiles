@@ -134,11 +134,6 @@ function rdmelog {
   op signin && rdme login --email $(op item get 'ReadMe' --field username) --password $(op item get 'ReadMe' --field password) --otp $(op item get 'ReadMe' --otp)
 }
 
-# Shorthand for `npm publish` with OTP prefilled via 1Password CLI
-function npmpub {
-  npm publish --otp $(op signin && op item get npmjs --otp)
-}
-
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/kanadg/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
