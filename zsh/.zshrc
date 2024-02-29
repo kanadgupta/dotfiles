@@ -119,6 +119,10 @@ function zshrc {
   code ~/.zshrc
 }
 
+function nn {
+  echo $(node -v) && echo $(npm -v)
+}
+
 # This if-block allows pyenv to set the "python" command
 # Source: https://opensource.com/article/19/5/python-3-default-mac#what-to-do
 if command -v pyenv 1>/dev/null 2>&1; then
