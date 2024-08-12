@@ -55,6 +55,8 @@
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
   // Apparently this toggling this setting fixes the VSCode package.json schema error I see from time to time?
   // See https://stackoverflow.com/a/75596916
   // "workbench.settings.openDefaultSettings": true
