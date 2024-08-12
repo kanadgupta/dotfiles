@@ -150,3 +150,6 @@ then
   autoload -Uz compinit
   compinit
 fi
+
+# pyenv
+PATH=$(pyenv root)/shims:$PATH
