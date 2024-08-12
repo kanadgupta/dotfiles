@@ -78,6 +78,7 @@ plugins=(
   # gh
   ## Deno is a custom omz plugin, see: https://deno.land/manual@v1.36.0/getting_started/setup_your_environment#zsh-example-with-ohmyzsh-and-antigen
   # deno
+  httpie
 )
 
 source $ZSH/oh-my-zsh.sh
