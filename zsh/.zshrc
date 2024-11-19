@@ -109,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 function mongogo {
-  m use 5.0.23 --dbpath ~/data/db
+  m use 6.0.16 --dbpath ~/data/db
 }
 
 function gho {
