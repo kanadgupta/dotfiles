@@ -13,7 +13,7 @@
     "other": "on"
   },
   "editor.codeActionsOnSave": {
-    "source.removeUnusedImports": true
+    // "source.removeUnusedImports": true
   },
   "terminal.external.osxExec": "iTerm.app",
   "editor.tabSize": 2,
