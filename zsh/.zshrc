@@ -117,7 +117,11 @@ function gho {
 }
 
 function zshrc {
-  code ~/.zshrc
+  code $HOME/.zshrc
+}
+
+function dotfiles {
+  code $HOME/Code/kanadgupta/dotfiles
 }
 
 function nn {
