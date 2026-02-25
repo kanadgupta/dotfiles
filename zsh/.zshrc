@@ -158,5 +158,3 @@ then
   compinit
 fi
 
-# pyenv
-PATH=$(pyenv root)/shims:$PATH
