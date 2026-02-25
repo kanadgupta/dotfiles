@@ -143,6 +143,9 @@ function rdmelog {
   op signin && rdme login --email $(op item get 'ReadMe' --field username) --password $(op item get 'ReadMe' --field password) --otp $(op item get 'ReadMe' --otp)
 }
 
+# 1Password CLI completions
+eval "$(op completion zsh)"; compdef _op op
+
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/kanadg/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
