@@ -12,8 +12,10 @@
     "strings": "on",
     "other": "on"
   },
+  "editor.formatOnSave": true, // feeling lukewarm about this — this makes it so prettier/biome/eslint/etc formats on save
   "editor.codeActionsOnSave": {
     // "source.removeUnusedImports": true
+    "source.fixAll": "explicit" // feeling lukewarm about this — this makes it so prettier/biome/eslint/etc formats on save
   },
   "terminal.external.osxExec": "iTerm.app",
   "editor.tabSize": 2,
@@ -55,7 +57,6 @@
   "workbench.activityBar.location": "top",
   "workbench.sideBar.location": "right",
   "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "editor.formatOnSave": true
   // Apparently this toggling this setting fixes the VSCode package.json schema error I see from time to time?
   // See https://stackoverflow.com/a/75596916
   // "workbench.settings.openDefaultSettings": true
