@@ -57,6 +57,14 @@
   "workbench.activityBar.location": "top",
   "workbench.sideBar.location": "right",
   "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://biomejs.dev": true
+  }
   // Apparently this toggling this setting fixes the VSCode package.json schema error I see from time to time?
   // See https://stackoverflow.com/a/75596916
   // "workbench.settings.openDefaultSettings": true
