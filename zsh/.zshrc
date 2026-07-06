@@ -139,7 +139,7 @@ fi
 
 # Load 1Password shell plugins
 # https://developer.1password.com/docs/cli/shell-plugins/readme#step-2-source-the-pluginssh-file
-source $HOME/.config/op/plugins.sh
+# source $HOME/.config/op/plugins.sh
 
 # brew autocomplete
 if type brew &>/dev/null
