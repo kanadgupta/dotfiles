@@ -150,3 +150,6 @@ then
   compinit
 fi
 
+# activate mise
+# https://mise.en.dev/getting-started.html#activate-mise
+eval "$($HOME/.local/bin/mise activate zsh)"
