@@ -19,4 +19,9 @@ echo "Regenerating/linking VSCode settings"
 rm ./.vscode/settings.json
 ln ~/Library/"Application Support"/Code/User/settings.json ./.vscode/settings.json
 
+# mise config
+echo "Regenerating/linking mise config"
+rm ./mise.toml
+ln ~/.config/mise/config.toml ./mise.toml
+
 echo "Done!"
