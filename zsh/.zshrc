@@ -111,10 +111,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-function mongogo {
-  m use 7.0.22 --dbpath ~/data/db
-}
-
 function gho {
   gh repo view -w
 }
@@ -126,37 +122,6 @@ function zshrc {
 function dotfiles {
   code $HOME/Code/kanadgupta/dotfiles
 }
-
-function nn {
-  echo $(node -v) && echo $(npm -v)
-}
-
-# This if-block allows pyenv to set the "python" command
-# Source: https://opensource.com/article/19/5/python-3-default-mac#what-to-do
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-
-# Load 1Password shell plugins
-# https://developer.1password.com/docs/cli/shell-plugins/readme#step-2-source-the-pluginssh-file
-# source $HOME/.config/op/plugins.sh
-
-# brew autocomplete
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
-  autoload -Uz compinit
-  compinit
-fi
-
-# pnpm
-export PNPM_HOME="/Users/supakanad/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME/bin:"*) ;;
-  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
-esac
-# pnpm end
 
 # activate mise
 # https://mise.en.dev/getting-started.html#activate-mise
