@@ -79,6 +79,7 @@ plugins=(
   ## Deno is a custom omz plugin, see: https://deno.land/manual@v1.36.0/getting_started/setup_your_environment#zsh-example-with-ohmyzsh-and-antigen
   # deno
   # httpie
+  # mise
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -122,6 +123,16 @@ function zshrc {
 function dotfiles {
   code $HOME/Code/kanadgupta/dotfiles
 }
+
+#compdef pnpm
+###-begin-pnpm-completion-###
+_pnpm_completion() {
+  local reply
+  reply=("${(@f)$(COMP_CWORD=$((CURRENT-1)) COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" SHELL=zsh pnpm completion-server -- "${words[@]}")}")
+  _describe 'values' reply
+}
+compdef _pnpm_completion pnpm
+###-end-pnpm-completion-###
 
 # activate mise
 # https://mise.en.dev/getting-started.html#activate-mise
