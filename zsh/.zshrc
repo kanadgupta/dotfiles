@@ -135,3 +135,6 @@ compdef _pnpm_completion pnpm
 # activate mise
 # https://mise.en.dev/getting-started.html#activate-mise
 eval "$($HOME/.local/bin/mise activate zsh)"
+
+# disables "!!" in zsh
+unsetopt banghist
