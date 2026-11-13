@@ -19,6 +19,11 @@ echo "Regenerating/linking VSCode settings"
 rm ./.vscode/settings.json
 ln ~/Library/"Application Support"/Code/User/settings.json ./.vscode/settings.json
 
+# ghostty config
+echo "Regenerating/linking ghostty config"
+rm ./ghostty/config.ghostty
+ln ~/Library/"Application Support"/com.mitchellh.ghostty/config.ghostty ./ghostty/config.ghostty
+
 # mise config
 echo "Regenerating/linking mise config"
 rm ./mise.toml

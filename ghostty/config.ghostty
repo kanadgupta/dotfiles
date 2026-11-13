@@ -1,0 +1,6 @@
+macos-icon = retro
+theme = Flexoki Light
+
+# allows for pasting in search bar
+# https://github.com/ghostty-org/ghostty/discussions/11530#discussioncomment-16657838
+keybind = super+v=paste_from_clipboard
